@@ -1,0 +1,14 @@
+
+.documentation {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+
+  p {
+    color: black;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 45px;
+  }
+}

@@ -1,0 +1,59 @@
+header {
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  position: relative;
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+
+    a {
+      text-decoration: none;
+      align-self: flex-end;
+    }
+
+    .title {
+      font-family: "Microsoft YaHei", sans-serif;
+      font-weight: bold;
+
+      :nth-child(1) {
+        font-size: 70px;
+        color: black;
+      }
+
+      :nth-child(2) {
+        font-size: 70px;
+        color: black;
+      }
+
+      :nth-child(3) {
+        font-size: 35px;
+        color: black;
+      }
+
+      :nth-child(4) {
+        font-size: 35px;
+        color: black;
+      }
+    }
+
+    .anchors{
+      font-family: "Microsoft YaHei", sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+      color: black;
+      font-style: italic;
+    }
+
+    .anchors:hover {
+      color: darkgray;
+    }
+  }
+}
