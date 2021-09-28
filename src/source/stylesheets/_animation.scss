@@ -1,0 +1,18 @@
+
+@keyframes slideForward {
+  from {
+    transform: translate(-50%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes slideBack {
+  from {
+    transform: translate(50%);
+  }
+  to {
+    transform: translate(0);
+  }
+}

@@ -2,16 +2,17 @@ header {
   border-bottom: 1px solid black;
   margin: 0 auto;
   width: 100%;
-  height: 100px;
+  height: 80px;
   position: relative;
 
   nav {
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 300px;
     position: absolute;
     left: 50%;
-    transform: translate(-50%);
+    bottom: 10px;
+    transform: translate(-64%);
 
 
     a {
@@ -19,41 +20,60 @@ header {
       align-self: flex-end;
     }
 
-    .title {
-      font-family: "Microsoft YaHei", sans-serif;
-      font-weight: bold;
+    .logotype {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
 
-      :nth-child(1) {
-        font-size: 70px;
-        color: black;
+      img {
+        width: 50px;
+        height: 50px;
       }
 
-      :nth-child(2) {
-        font-size: 70px;
-        color: black;
-      }
+      .title {
+        font-family: "Microsoft YaHei", sans-serif;
+        font-weight: bold;
 
-      :nth-child(3) {
-        font-size: 35px;
-        color: black;
-      }
+        :nth-child(1) {
+          font-size: 50px;
+          color: black;
+        }
 
-      :nth-child(4) {
-        font-size: 35px;
-        color: black;
+        :nth-child(2) {
+          font-size: 50px;
+          color: black;
+        }
+
+        :nth-child(3) {
+          font-size: 25px;
+          color: black;
+        }
+
+        :nth-child(4) {
+          font-size: 25px;
+          color: black;
+        }
       }
     }
 
-    .anchors{
-      font-family: "Microsoft YaHei", sans-serif;
-      font-size: 25px;
-      font-weight: bold;
-      color: black;
-      font-style: italic;
-    }
 
-    .anchors:hover {
-      color: darkgray;
+    .links {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      align-self: flex-end;
+
+
+      .anchors{
+        font-family: "Microsoft YaHei", sans-serif;
+        font-size: 25px;
+        font-weight: normal;
+        color: black;
+      }
+
+      .anchors:hover {
+        color: darkgray;
+      }
     }
   }
 }
