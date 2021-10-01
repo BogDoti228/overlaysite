@@ -8,6 +8,8 @@
 @import "purpose";
 @import "functional";
 @import "animation";
+@import "imageBar";
+@import "guid";
 
 body {
   padding: 0;
@@ -22,4 +24,14 @@ html {
   height: 100%;
   padding: 0;
   margin: 0;
+}
+
+@font-face {
+  font-family: 'Geometria Regular';
+  src: url('../components/fonts/Geometria.eot');
+  src: url('../components/fonts/Geometria.eot?#iefix') format('embedded-opentype'),
+  url('../components/fonts/Geometria.woff') format('woff'),
+  url('../components/fonts/Geometria.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

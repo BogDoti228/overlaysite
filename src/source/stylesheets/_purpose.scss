@@ -1,8 +1,8 @@
 
 .purpose {
   width: 100%;
-  height: 400px;
-  background: linear-gradient(to bottom, #F0F0F0 5%, #fff 20%, #fff 100%);
+  height: 300px;
+  background: linear-gradient(to bottom, #F0F0F0 5%, #fff 50%, #fff 100%);
   position: relative;
 
   .purposeInside {
@@ -10,18 +10,20 @@
     left: 50%;
     top: 25%;
     transform: translate(-50%, -25%);
-    font-family: "Microsoft YaHei", sans-serif;
+    font-family: "Geometria Regular", sans-serif;
 
     h2 {
       font-size: 30px;
       margin-bottom: 5px;
       font-weight: normal;
+      visibility: hidden;
     }
 
     .purposeText {
       margin-top: 5px;
       font-size: 20px;
       text-align: justify;
+      visibility: hidden;
     }
   }
 }

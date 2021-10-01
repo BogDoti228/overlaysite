@@ -2,17 +2,21 @@
 @keyframes slideForward {
   from {
     transform: translate(-50%);
+    visibility: hidden;
   }
   to {
     transform: translate(0);
+    visibility: visible;
   }
 }
 
 @keyframes slideBack {
   from {
+    visibility: hidden;
     transform: translate(50%);
   }
   to {
     transform: translate(0);
+    visibility: visible;
   }
 }

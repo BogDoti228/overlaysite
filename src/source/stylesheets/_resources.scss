@@ -16,7 +16,7 @@
     align-items: center;
 
     .resourcesText {
-      font-family: "Microsoft YaHei", sans-serif;
+      font-family: "Geometria Regular", sans-serif;
       font-size: 35px;
       width: 550px;
       margin-right: -100px;
@@ -26,6 +26,10 @@
       width: 150px;
       height: 150px;
       object-fit: contain;
+    }
+
+    img:hover {
+      opacity: 0.9;
     }
   }
 }

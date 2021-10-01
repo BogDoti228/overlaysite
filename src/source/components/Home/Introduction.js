@@ -1,5 +1,17 @@
+import {imgSwitch} from "../../../store/imgSwitch";
+import {useState} from "react";
 
 function Introduction(){
+    const [counter, setCounter] = useState(0);
+
+    function nextImage() {
+        setCounter((counter + 1) % imgSwitch.length)
+    }
+
+    function prevImage(){
+        setCounter((counter - 1 + imgSwitch.length) % imgSwitch.length)
+    }
+
     return (
         <article className={"introduction"}>
             <div className={"introductionInside"}>
@@ -7,9 +19,11 @@ function Introduction(){
                     <p className={"firstP"}>Overlay PCon - новая веха в истории удобства.</p>
                     <p className={"secondP"}>Всего пару кликов и вы уже играете и одновременно смотрите что вы хотите</p>
                 </div>
-                <img
-                    src="https://tub.avatars.mds.yandex.net/i?id=d5f1d5e5b119c826b8a90676631fb406-5274396-images-thumbs&n=13&exp=1"
-                    alt=""/>
+                <div className={"introductionImgBar"}>
+                    <div className={"arrows arrow_back"} onClick={nextImage}/>
+                    <img src={imgSwitch[counter]} alt=""/>
+                    <div className={"arrows arrow_forward"} onClick={prevImage}/>
+                </div>
             </div>
         </article>
     )

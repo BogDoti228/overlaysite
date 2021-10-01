@@ -17,7 +17,7 @@
     align-items: center;
 
     .introductionText {
-      font-family: "Microsoft YaHei", sans-serif;
+      font-family: "Geometria Regular", sans-serif;
       justify-self: flex-start;
       .firstP {
         font-size: 35px;
@@ -34,10 +34,46 @@
       }
     }
 
-    img {
-      width: 500px;
-      height: 500px;
-      object-fit: contain;
+    .introductionImgBar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+
+      .arrows {
+        height: 50px;
+        width: 50px;
+        box-shadow: 1px 1px gray, 2px 2px darkgray;
+        border-radius: 15px;
+        position: relative;
+      }
+
+      .arrows:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+
+      .arrows:active{
+        opacity: 1;
+        box-shadow: inset 1px 1px gray, inset 2px 2px darkgray;
+      }
+
+      .arrow_back {
+        background: url("../photos/arrow_back.svg") gold 50% 50% no-repeat;
+        background-size: 35px 35px;
+      }
+
+      .arrow_forward {
+        background: url("../photos/arrow_forward.svg") gold 50% 50% no-repeat;
+        background-size: 35px 35px;
+      }
+
+      img {
+        width: 500px;
+        height: 500px;
+        object-fit: contain;
+      }
     }
+
   }
 }
